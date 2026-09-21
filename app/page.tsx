@@ -8,12 +8,21 @@ export default function Home() {
         This repo is set up to test the axe linter against intentionally broken markup.
       </p>
 
-      <Link
-        href="/axe-demo"
-        className="inline-flex w-fit rounded-md bg-black px-4 py-2 text-white hover:bg-zinc-800"
-      >
-        Open the bad accessibility page
-      </Link>
+      <div className="flex flex-col items-start gap-4">
+        <Link
+          href="/axe-demo"
+          className="inline-flex w-fit rounded-md bg-black px-4 py-2 text-white hover:bg-zinc-800"
+        >
+          Open the first bad accessibility page
+        </Link>
+
+        <Link
+          href="/axe-demo-two"
+          className="inline-flex w-fit rounded-md border border-black px-4 py-2 text-black hover:bg-zinc-100"
+        >
+          Open the second bad accessibility page
+        </Link>
+      </div>
     </main>
   );
 }
